@@ -71,24 +71,51 @@ programa {
     
                       se (opcao_crud == 1)
                       se (quantidade_temp > 0 e quantidade_temp <= estoque_prod1)
-  
-                      senao {
-                      escreva("Produto inválido!")
+                          qtd_carrinho_prod1 = qtd_carrinho_prod1 + quantidade_temp
+                            estoque_prod1 = estoque_prod1 - quantidade_temp
+                      escreva("Item adicionado ao carrinho com sucesso!\n")
+                      senao { } senao se (opcao_crud == 2) {
+                        se (quantidade_temp > 0 e quantidade_temp <= estoque_prod2) {
+                            qtd_carrinho_prod2 = qtd_carrinho_prod2 + quantidade_temp
+                            estoque_prod2 = estoque_prod2 - quantidade_temp
+                            escreva("Item adicionado ao carrinho com sucesso!\n")
+                        } senao {
+                            escreva("Quantidade inválida ou estoque insuficiente!\n")
+                        }
+                    } senao se (opcao_crud == 3) {
+                        se (quantidade_temp > 0 e quantidade_temp <= estoque_prod3) {
+                            qtd_carrinho_prod3 = qtd_carrinho_prod3 + quantidade_temp
+                            estoque_prod3 = estoque_prod3 - quantidade_temp
+                            escreva("Item adicionado ao carrinho com sucesso!\n")
+                        } senao {
+                            escreva("Quantidade inválida ou estoque insuficiente!\n")
+                        }
+                    }
+                     senao {
+                       escreva("Produto inválido!")
 
-                      escreva("Pressione ENTER para voltar ao menu...")
+                    escreva("Pressione ENTER para voltar ao menu...")
                     leia(tecla_pausa)
-}                 pare
+                    }
+                    pare
 
         //colar a quinta parte aqui
 
                        //=======================================
                           // R - READ (Visualizar o Carrinho)
                           // ======================================
-                      caso 2 : 
-                             limpa()
-                              escreva("--- MEU CARRINHO DE COMPRAS ---")
-                              escreva("pressione enter para voltar ao menu...")
-                             leia(tecla_pausa)   
-                  pare
+                    caso 2:
+                    limpa()
+                    escreva("--- MEU CARRINHO DE COMPRAS ---\n")
+                    escreva("Camisa Esportiva: ", qtd_carrinho_prod1, " unidade(s)\n")
+                    escreva("Boné Casual:      ", qtd_carrinho_prod2, " unidade(s)\n")
+                    escreva("Tênis de Corrida: ", qtd_carrinho_prod3, " unidade(s)\n")
 
-         //colar a sexta parte aqui
+                    valor_total_bruto = (qtd_carrinho_prod1 * preco_prod1) + 
+                                        (qtd_carrinho_prod2 * preco_prod2) + 
+                                        (qtd_carrinho_prod3 * preco_prod3)
+
+                    escreva("\nValor Total Atual: R$ ", valor_total_bruto, "\n\n")
+                    escreva("Pressione ENTER para voltar ao menu...")
+                    leia(tecla_pausa)
+                    pare
