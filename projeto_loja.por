@@ -131,5 +131,9 @@ programa {
                     escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
                     escreva("Escolha o produto que deseja alterar: ")
                     leia(opcao_crud)
+                     se (opcao_crud >= 1 e opcao_crud <= 3) {
+                        escreva("Digite a NOVA quantidade total para este item: ")
+                        leia(quantidade_temp)
+                     }
 
 
