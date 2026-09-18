@@ -134,6 +134,17 @@ programa {
                      se (opcao_crud >= 1 e opcao_crud <= 3) {
                         escreva("Digite a NOVA quantidade total para este item: ")
                         leia(quantidade_temp)
+                        se (opcao_crud == 1) {
+                            inteiro diff = quantidade_temp - qtd_carrinho_prod1
+                            se (diff <= estoque_prod1 e quantidade_temp >= 0) {
+                                estoque_prod1 = estoque_prod1 - diff
+                                qtd_carrinho_prod1 = quantidade_temp
+                                escreva("Quantidade atualizada com sucesso!\n")
+                            } senao {
+                                escreva("Quantidade inválida ou estoque insuficiente!\n")
+                            }
                      }
+                     }
+                     
 
 
