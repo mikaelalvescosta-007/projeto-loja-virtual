@@ -119,3 +119,17 @@ programa {
                     escreva("Pressione ENTER para voltar ao menu...")
                     leia(tecla_pausa)
                     pare
+
+                    // =============================================
+                // U - UPDATE (Alterar Quantidade no Carrinho)
+                // =============================================
+                caso 3:
+                    limpa()
+                    escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---\n")
+                    escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
+                    escreva("2. Boné Casual      (No carrinho: ", qtd_carrinho_prod2, ")\n")
+                    escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
+                    escreva("Escolha o produto que deseja alterar: ")
+                    leia(opcao_crud)
+
+
