@@ -144,7 +144,15 @@ programa {
                                 escreva("Quantidade inválida ou estoque insuficiente!\n")
                             }
                      }
-                     }
+                     }senao se (opcao_crud == 2) 
+                            inteiro diff = quantidade_temp - qtd_carrinho_prod2
+                            se (diff <= estoque_prod2 e quantidade_temp >= 0) {
+                                estoque_prod2 = estoque_prod2 - diff
+                                qtd_carrinho_prod2 = quantidade_temp
+                                escreva("Quantidade atualizada com sucesso!\n")
+                      }senao {
+                                escreva("Quantidade inválida ou estoque insuficiente!\n")
+                            }
                      
 
 
