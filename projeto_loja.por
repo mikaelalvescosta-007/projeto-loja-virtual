@@ -229,6 +229,19 @@ pare
                 // D - DELETE (Remover Item do Carrinho)
                 // ===============================================
                 caso 4:")
+
+                    limpa()
+    escreva("--- REMOVER ITEM DO CARRINHO ---")
+
+    escreva("1. Camisa esportiva (no carrinho ", qtd_carrinho_prod1 ,)")
+
+    escreva("2. Bone casual  (no carrinho ", qtd_carrinho_prod2 ,)")
+
+    escreva("3. Tenis de corrida (no carrinho ", qtd_carrinho_prod3 ,)")
+  
+  
+
+  
        
 
                        
