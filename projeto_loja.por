@@ -202,7 +202,22 @@ pare
      escreva("2. Bone casual  (No carrinho : ", qtd_carrinho_prod2, )")
 
      escreva("3. tenis de corrida (No carrinho : ", qtd_carrinho_prod3, )")
+     escreva("Quantidade inválida ou acima do estoque disponível!")
+                             
+       senao se (opcao_crud) {
+       estoque_prod3 = estoque_prod3 +qtd_carrinho_prod3
+       escreva("Digite a NOVA quantidade total para este item:")
+       leia(quantidade_temp) 
+            se(quantidade_temp >= 0 e quantidade_temp <= estoque_prod3)
+               qtd_carrinho_prod3 = quantidade_temp
+               estoque_prod3 = estoque_prod3 - quantidade_temp
+       escreva("Quantidade atualizada com sucesso !")
+       } senao {
+        estoque_prod3 = estoque_prod3 - qtd_carrinho_prod3
+       }
+                       
   
+
 
 
  
