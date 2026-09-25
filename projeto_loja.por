@@ -316,26 +316,3 @@ pare
   se (qtd_carrinho_prod2 > 0){
     escreva("-", qtd_carrinho_prod2, "x bone casual = R$ ", (qtd_carrinho_prod2))
   }
-  
-
-
-  
-
-
-
-
-  
-
-  
-  
-
-  
-       
-
-                       
-  
-
-
-
- 
-
