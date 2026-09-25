@@ -186,5 +186,8 @@ pare
       escreva("")
      }
      }
+     escreva("pressione enter para voltar ao menu...")
+     leia(tecla_pausa)
+     pare
  
 
