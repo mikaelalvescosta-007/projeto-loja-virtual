@@ -193,6 +193,17 @@ pare
     // ====================================================== 
     // U - UPDATE ( ATUALIZAR QUANTIDADE NO CARRINHO )
     // ====================================================== 
-    
+    caso 3: 
+    limpa()
+     escreva("--- ALTERAR QUANTIDADE NO CARRINHO ---")
+
+     escreva("1. Camisa esportiva (No carrinho : ", qtd_carrinho_prod1, )")
+
+     escreva("2. Bone casual  (No carrinho : ", qtd_carrinho_prod2, )")
+
+     escreva("3. tenis de corrida (No carrinho : ", qtd_carrinho_prod3, )")
+  
+
+
  
 
