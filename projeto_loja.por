@@ -189,5 +189,10 @@ pare
      escreva("pressione enter para voltar ao menu...")
      leia(tecla_pausa)
      pare
+
+    // ====================================================== 
+    // U - UPDATE ( ATUALIZAR QUANTIDADE NO CARRINHO )
+    // ====================================================== 
+    
  
 
