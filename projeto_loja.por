@@ -170,4 +170,21 @@ pare
   }
 
         //colar a 10 parte aqui
+         escreva("escolha o item para alterar a quantidade: ")
+   leia(opcao_crud)
+
+     se (opcao_crud == 1){
+       estoque_prod1 = estoque_prod1 + qtd_carrinho_prod1
+       escreva("digite a nova quantidade total para esrte item : ")
+       leia(quantidade_temp)
+     se(quantidade_temp >= 0 e quantidade_temp <= estoque_prod1){
+       qtd_carrinho_prod1 = quantidade_temp
+       estoque_prod1 = estoque_prod1 - quantidade_temp
+       escreva("quantidade atualizada com sucesso ! ")
+     } senao{
+      estoque_prod1 = estoque_prod1 - qtd_carrinho_prod1
+      escreva("")
+     }
+     }
+ 
 
