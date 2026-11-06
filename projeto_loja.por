@@ -118,13 +118,13 @@ programa {
           senao
           {
             se (qtd_carrinho_prod1 > 0) {
-              escreva("- \n", qtd_carrinho_prod1, "x Camisa Esportiva (R$ ",(qtd_carrinho_prod1 * preco_prod1),"\n")
+              escreva("- \n", qtd_carrinho_prod1, "x Camisa Esportiva (R$ ",(qtd_carrinho_prod1 * preco_prod1),")\n")
             }
             se (qtd_carrinho_prod2 > 0) {
-              escreva("- \n", qtd_carrinho_prod2, "x Boné Casual (R$ ",(qtd_carrinho_prod2 * preco_prod2),"\n")
+              escreva("- \n", qtd_carrinho_prod2, "x Boné Casual (R$ ",(qtd_carrinho_prod2 * preco_prod2),")\n")
             }
             se (qtd_carrinho_prod3 > 0) {
-              escreva("- \n", qtd_carrinho_prod3, "x Tênis de Corrida (R$ ",(qtd_carrinho_prod3 * preco_prod3),"\n")
+              escreva("- \n", qtd_carrinho_prod3, "x Tênis de Corrida (R$ ",(qtd_carrinho_prod3 * preco_prod3),")\n")
             }
           }
 
@@ -206,11 +206,11 @@ programa {
           limpa()
           escreva("--- REMOVER ITEM DO CARRINHO ---\n")
 
-          escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, "\n")
+          escreva("1. Camisa Esportiva (No carrinho: ", qtd_carrinho_prod1, ")\n")
 
-          escreva("2. Boné Casual       (No carrinho: ", qtd_carrinho_prod2, "\n")
+          escreva("2. Boné Casual       (No carrinho: ", qtd_carrinho_prod2, ")\n")
 
-          escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, "\n")
+          escreva("3. Tênis de Corrida (No carrinho: ", qtd_carrinho_prod3, ")\n")
 
           escreva("Escolha o item que deseja remover totalmente: \n")
           leia(opcao_crud)
